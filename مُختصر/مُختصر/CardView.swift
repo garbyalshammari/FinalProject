@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    var item: Item = items[4]
+    var item: Item = items[3]
     
     
     var body: some View {
