@@ -13,18 +13,21 @@ struct ContentView: View {
             HomeView()
                 .tabItem {
                     VStack{
-                    Image(systemName: "house")
-                    Text("HOME")
-                }
+                        Image(systemName: "house")
+                        Text("HOME")
+                    }
+
                 }
             listview()
                 .tabItem {
                     VStack{
-                    Image(systemName: "eye")
-                    Text("HOME")
-                }
+                        Image(systemName: "eye")
+                        Text("HOME")
+                    }
+
                 }
         }
+        
     }
 }
 struct ContentView_Previews: PreviewProvider {
