@@ -1,39 +1,22 @@
 //
-//  ContentView.swift
+//  DetailView.swift
 //  مُختصر
 //
-//  Created by MacBook AIr on 28/03/2022.
+//  Created by MacBook AIr on 30/03/2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct DetailView: View {
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false){
-        HStack{
-            ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                CardView()
-            }
-        }
-            padding()
-        }
-}
-    }
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
-
-struct CardView: View {
-    var body: some View {
+        ScrollView{
         VStack(alignment: .leading, spacing: 8){
             Image("2")
                 .resizable()
-                .aspectRatio( contentMode: .fit )
+           //     .aspectRatio( contentMode: .fit )
                 .frame(height: 129)
                 .frame(maxWidth: .infinity)
+                .clipShape(RoundedRectangle(cornerRadius: 30))
             Text("لعبة الثقة")
                 .font(.title)
                 .fontWeight(.bold)
@@ -47,9 +30,16 @@ struct CardView: View {
         }
         .foregroundColor(.white)
         .padding(16)
-        .frame(width: 252, height: 329)
-        .background(Color.purple)
-        .cornerRadius(30)
        
+        .background(
+            LinearGradient(gradient: Gradient(colors: [.green, .red, .black]), startPoint: .top, endPoint: .bottom)
+        )
+    }
+    }
+}
+
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView()
     }
 }

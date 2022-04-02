@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D067D1F827F4DFCA002ED6C9 /* listitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067D1F727F4DFCA002ED6C9 /* listitem.swift */; };
+		D067D1FA27F4E2C1002ED6C9 /* listview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067D1F927F4E2C1002ED6C9 /* listview.swift */; };
+		D067D20127F4EA7B002ED6C9 /* deta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067D20027F4EA7B002ED6C9 /* deta.swift */; };
+		D07EC00B27F3C476001F61C9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EC00A27F3C476001F61C9 /* DetailView.swift */; };
+		D07EC00D27F3C5C9001F61C9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EC00C27F3C5C9001F61C9 /* CardView.swift */; };
+		D07EC00F27F3C6E9001F61C9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EC00E27F3C6E9001F61C9 /* HomeView.swift */; };
 		D0A3C55F27F118B800F0EC5B /* ______App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A3C55E27F118B800F0EC5B /* ______App.swift */; };
 		D0A3C56127F118B800F0EC5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A3C56027F118B800F0EC5B /* ContentView.swift */; };
 		D0A3C56327F118BB00F0EC5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A3C56227F118BB00F0EC5B /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D067D1F727F4DFCA002ED6C9 /* listitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listitem.swift; sourceTree = "<group>"; };
+		D067D1F927F4E2C1002ED6C9 /* listview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listview.swift; sourceTree = "<group>"; };
+		D067D20027F4EA7B002ED6C9 /* deta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deta.swift; sourceTree = "<group>"; };
+		D07EC00A27F3C476001F61C9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D07EC00C27F3C5C9001F61C9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D07EC00E27F3C6E9001F61C9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D0A3C55B27F118B800F0EC5B /* مُختصر.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "مُختصر.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A3C55E27F118B800F0EC5B /* ______App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "______App.swift"; sourceTree = "<group>"; };
 		D0A3C56027F118B800F0EC5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D067D1FB27F4E8D3002ED6C9 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D0A3C56027F118B800F0EC5B /* ContentView.swift */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
 		D0A3C55227F118B800F0EC5B = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +72,14 @@
 			isa = PBXGroup;
 			children = (
 				D0A3C55E27F118B800F0EC5B /* ______App.swift */,
-				D0A3C56027F118B800F0EC5B /* ContentView.swift */,
+				D067D1FB27F4E8D3002ED6C9 /* navigation */,
+				D07EC00E27F3C6E9001F61C9 /* HomeView.swift */,
+				D067D1F727F4DFCA002ED6C9 /* listitem.swift */,
+				D067D20027F4EA7B002ED6C9 /* deta.swift */,
+				D07EC00A27F3C476001F61C9 /* DetailView.swift */,
 				D0A3C56227F118BB00F0EC5B /* Assets.xcassets */,
+				D067D1F927F4E2C1002ED6C9 /* listview.swift */,
+				D07EC00C27F3C5C9001F61C9 /* CardView.swift */,
 				D0A3C56427F118BB00F0EC5B /* Preview Content */,
 			);
 			path = "مُختصر";
@@ -138,6 +164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0A3C56127F118B800F0EC5B /* ContentView.swift in Sources */,
+				D07EC00B27F3C476001F61C9 /* DetailView.swift in Sources */,
+				D067D1F827F4DFCA002ED6C9 /* listitem.swift in Sources */,
+				D067D20127F4EA7B002ED6C9 /* deta.swift in Sources */,
+				D07EC00D27F3C5C9001F61C9 /* CardView.swift in Sources */,
+				D07EC00F27F3C6E9001F61C9 /* HomeView.swift in Sources */,
+				D067D1FA27F4E2C1002ED6C9 /* listview.swift in Sources */,
 				D0A3C55F27F118B800F0EC5B /* ______App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
