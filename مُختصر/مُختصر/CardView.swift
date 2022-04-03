@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CardView: View {
-    var item: Item = items[0]
+    var item: Item = items[1]
     
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 8){
+        VStack(alignment: .trailing, spacing: 8){
             Image(item.image)
                 .resizable()
            //     .aspectRatio( contentMode: .fit )
@@ -27,13 +27,13 @@ struct CardView: View {
             Text(item.tixt)
                 .lineLimit(2)
                 .opacity(0.9)
-            Text("من المحتمل لأي شخص ان يصبح ضحية للعبة الثقة، فكثير من الناس خدعوا لمرات عدة في حياتهم، دون أن يلاحظوا ذلك على الإطلاق .")
+          
                 
         }
         .foregroundColor(.white)
         .padding(16)
         .frame(width: 300, height: 329)
-        .background(item.gradinet)
+    //    .background(item.gradinet)
         .cornerRadius(30)
        
     }
@@ -41,6 +41,7 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(item: items[0])
+.previewInterfaceOrientation(.portrait)
     }
 }

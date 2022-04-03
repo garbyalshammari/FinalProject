@@ -13,9 +13,9 @@ struct HomeView: View {
             ScrollView{
                 ScrollView(.horizontal, showsIndicators: false){
                     HStack(spacing: 16){
-                        ForEach(0 ..< 5) { item in
+                        ForEach(items) { item in
                             NavigationLink(destination: DetailView()){
-                                CardView()
+                                CardView(item: item)
                             }
                         }
                     }
