@@ -14,10 +14,10 @@ struct Item: Identifiable {
     var gradinet: LinearGradient
 }
 var items = [
-Item(title: "الإصدارات الجديدة", tixt: "من المحتمل لأي شخص ان يصبح ضحية للعبة الثقة، فكثير من الناس خدعوا لمرات عدة في حياتهم، دون أن يلاحظوا ذلك على الإطلاق .", image: "2", gradinet:
+Item(title: "علم النفس الشرعي", tixt: "إن علم النفس الشرعي هو العلم الذي بحث في شخصيات ونفوس المجرمين محاولا إبداء تصورات محتملة لتحول بعض الأشخاص دون غيرهم الى مجرمين", image: "2", gradinet:
         LinearGradient(gradient: Gradient(colors: [.blue, .pink, .purple]), startPoint: .top, endPoint: .bottom)),
     
-    Item(title: "hghhghh", tixt: "من المحتمل لأي شخص ان يصبح ضحية للعبة الثقة، فكثير من الناس خدعوا لمرات عدة في حياتهم، دون أن يلاحظوا ذلك على الإطلاق .", image: "2", gradinet:
+    Item(title: "لأنك الله", tixt: "إننا دون معرفة أسماء الله في صحراء تائهون تتبدد أيامنا في لهيب تلك الصحراء ودوامة القلق النفسي ..أختر الله:معرفة وايمانا ويقينا وعبادة وخضوعا ثم أنسا وسعادة وهناء، او اختر التيه والضياع والاختناق والشعور بالكآبة والتمزق النفسي ", image: "1", gradinet:
         LinearGradient(gradient: Gradient(colors: [.primary, .blue, .brown]), startPoint: .top, endPoint: .bottom)),
     
     Item(title: "الإصدارات الجديدة", tixt: "من المحتمل لأي شخص ان يصبح ضحية للعبة الثقة، فكثير من الناس خدعوا لمرات عدة في حياتهم، دون أن يلاحظوا ذلك على الإطلاق .", image: "2", gradinet:

@@ -17,7 +17,7 @@ struct listitem: View {
                 .background(Color.blue)
                 .mask(Circle())
             VStack(alignment: .leading, spacing: 4.8){
-                Text("yyvtvtyyy")
+                Text("yry")
         }
         }
         .padding(.vertical)

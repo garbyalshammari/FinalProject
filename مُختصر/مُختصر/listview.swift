@@ -13,17 +13,17 @@ struct listview: View {
     var body: some View {
         NavigationView{
             List {
-                ForEach(0 ..< 5) { item in
+                ForEach(items) { item in
                     listitem()
                 .sheet(isPresented: $show, content: {
-                    DetailView()
+                    DetailView(book: item)
                         })
                         .onTapGesture {
                             show.toggle()
                         }
                         }
     }
-            .navigationTitle("الكتب")
+            .navigationTitle("جميع الكتب")
     }
     }
 }

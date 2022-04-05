@@ -14,7 +14,7 @@ struct HomeView: View {
                 ScrollView(.horizontal, showsIndicators: false){
                     HStack(spacing: 16){
                         ForEach(items) { item in
-                            NavigationLink(destination: DetailView()){
+                            NavigationLink(destination: DetailView(book: item)){
                                 CardView(item: item)
                             }
                         }
@@ -22,10 +22,18 @@ struct HomeView: View {
                     .padding()
                 }
                 .navigationTitle("الإصدارات الجديدة")
+                Text("الكتب")
+                    .font(.subheadline).bold()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                VStack{
+                    HomeView()
+                }
             }
         }
+        }
     }
-}
+
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

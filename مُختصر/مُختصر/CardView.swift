@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    var item: Item = items[1]
+    var item: Item
     
     
     var body: some View {
@@ -33,7 +33,7 @@ struct CardView: View {
         .foregroundColor(.white)
         .padding(16)
         .frame(width: 300, height: 329)
-    //    .background(item.gradinet)
+       .background(item.gradinet)
         .cornerRadius(30)
        
     }
