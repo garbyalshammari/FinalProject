@@ -22,17 +22,16 @@ struct HomeView: View {
                     .padding()
                 }
                 .navigationTitle("الإصدارات الجديدة")
-                Text("الكتب")
-                    .font(.subheadline).bold()
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+                  
                     .padding()
-                VStack{
-                    HomeView()
+        //        VStack{
+            //        HomeView()
                 }
             }
         }
         }
-    }
+
 
 
 struct HomeView_Previews: PreviewProvider {

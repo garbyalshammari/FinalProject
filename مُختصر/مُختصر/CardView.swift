@@ -16,7 +16,8 @@ struct CardView: View {
             Image(item.image)
                 .resizable()
            //     .aspectRatio( contentMode: .fit )
-                .frame(height: 129)
+                .frame(height: 130.0)
+            
                 .frame(maxWidth: .infinity)
                 .clipShape(RoundedRectangle(cornerRadius: 30))
             Text(item.title)
@@ -25,6 +26,8 @@ struct CardView: View {
             
             
             Text(item.tixt)
+                .font(.body)
+                .fontWeight(.medium)
                 .lineLimit(2)
                 .opacity(0.9)
           
@@ -32,7 +35,7 @@ struct CardView: View {
         }
         .foregroundColor(.white)
         .padding(16)
-        .frame(width: 300, height: 329)
+        .frame(width: 320, height: 400)
        .background(item.gradinet)
         .cornerRadius(30)
        
